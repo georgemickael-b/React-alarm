@@ -31,7 +31,7 @@ class AlarmActor extends React.Component{
             //buzzAlarm
             if(this.isBuzzable()){ //important to avoid loop displaying
                 this.setState({alarmBuzzerOpen:true,
-                                buzzerTime:alarm.hour+":"+alarm.minute+":"+alarm.ampm,
+                                buzzerTime:Utils.prependZero(alarm.hour)+":"+Utils.prependZero(alarm.minute)+" "+alarm.ampm,
                                 buzzerMessage:alarm.message
                               })
                 this.lastBuzzedDate=new Date();
@@ -41,7 +41,7 @@ class AlarmActor extends React.Component{
         else{
           //buzz Alarm and disbale as it is "Once" type
           this.setState({alarmBuzzerOpen:true,
-                          buzzerTime:alarm.hour+":"+alarm.minute+":"+alarm.ampm,
+                          buzzerTime:Utils.prependZero(alarm.hour)+":"+Utils.prependZero(alarm.minute)+" "+alarm.ampm,
                           buzzerMessage:alarm.message
                         })
           this.props.toggleEnableAlarm(alarm.id)
