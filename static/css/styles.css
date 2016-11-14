@@ -1,0 +1,12 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  margin:0px;
+  background-image: url('../img/bg.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+html,body,#app{
+  height:100%;
+}

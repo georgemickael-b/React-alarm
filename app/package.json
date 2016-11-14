@@ -1,0 +1,35 @@
+{
+  "name": "react-alaram-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack -d --watch",
+    "build": "webpack -p"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-loader": "^6.2.7",
+    "babel-plugin-transform-class-properties": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babelify": "^7.3.0",
+    "material-ui": "^0.16.1",
+    "nuka-carousel": "^2.0.3",
+    "react": "^15.3.2",
+    "react-bootstrap-grid": "^1.0.0",
+    "react-cellblock": "^2.0.0",
+    "react-dom": "^15.3.2",
+    "react-flexbox-grid": "^0.10.2",
+    "react-fontawesome": "^1.2.0",
+    "react-grid": "^1.1.7",
+    "react-grid-system": "^1.5.2",
+    "react-pure-grid": "^2.1.0",
+    "react-slick": "^0.14.5",
+    "react-sticky": "^5.0.5",
+    "react-tap-event-plugin": "^1.0.0",
+    "react-toolbox": "^1.2.5",
+    "slick-carousel": "^1.6.0"
+  }
+}
